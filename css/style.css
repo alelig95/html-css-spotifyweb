@@ -101,7 +101,7 @@
 
 .recently-played-content{
   text-align: center;
-  width: calc(100%/6);
+  width: calc(80%/6);
 }
 
 .recently-played img{
