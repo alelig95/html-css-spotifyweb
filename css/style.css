@@ -171,11 +171,31 @@ main {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 98%;
   display: none;
 }
 
+.content-img-radius{
+  position: relative;
+}
+
+.opacity-radius{
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98%;
+  display: none;
+  border-radius: 100%;
+}
+
 .content-img:hover .opacity, .content-img:hover .fa-play-circle-o {
+  display: block;
+  cursor: pointer;
+}
+
+.content-img-radius:hover .opacity-radius, .content-img-radius:hover .fa-play-circle-o{
   display: block;
   cursor: pointer;
 }
