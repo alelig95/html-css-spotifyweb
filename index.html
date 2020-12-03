@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
   </head>
@@ -10,49 +12,64 @@
 
     <div class="wrapper">
 
-      <div class="sidebar fl">
-        <div class="logo">
+      <main>
 
 
-          <img src="img/logo-small.svg" alt="">
-          <span>Spotify</span>
 
-        </div>
-        <ul>
-          <li> <img src="img/home.svg" alt=""> Home </li>
-          <li> <img src="img/search.svg" alt="">Search </li>
-          <li> <img src="img/libreria.svg" alt="">La tua libreria</li>
-        </ul>
+        <div class="sidebar fl">
 
-        <div class="playlist">
-          <h4>PLAYLIST</h4>
-          <img src="" alt="">
+          <div class="logo">
+            <img src="img/logo.svg" alt="">
+          </div>
 
-        </div>
 
-      </div>
-
-      <div class="header">
-        <div class="button-type-a fr">
-          EFFETTUA L'UPGRADE
-        </div>
-      </div>
-
-      <div class="main">
-        <nav>
           <ul>
-            <li> in evidenza</li>
-            <li>podcast</li>
-            <li>classifiche</li>
-            <li>generi e mood</li>
-            <li>nuove uscite</li>
-            <li>scopri</li>
+            <li> <img src="img/home.svg" alt=""> <span>Home</span> </li>
+            <li> <img src="img/search.svg" alt=""><span>Search</span> </li>
+            <li> <img src="img/libreria.svg" alt=""><span>La tua libreria</span></li>
           </ul>
-        </nav>
+
+          <div class="playlist">
+            <h4>PLAYLIST</h4>
+            <p>Crea playlist</p>
+            <ul>
+              <li>Playlist 1</li>
+              <li>Playlist 2</li>
+              <li>Playlist 3</li>
+              <li>Playlist 4</li>
+              <li>Playlist 5</li>
+              <li>Playlist 6</li>
+              <li>Playlist 7</li>
+            </ul>
+
+          </div>
+
+        </div>
 
 
-          <h2>Recently played</h2>
-          <div class="recently-played">
+        <section class="music-content fl">
+
+          <div class="header">
+
+            <button class="button-type-a" type="button" name="button">EFFETTUA L'UPGRADE</button>
+
+          </div>
+
+          <nav class="music-content-nav">
+            <ul>
+              <li>in evidenza</li>
+              <li>podcast</li>
+              <li>classifiche</li>
+              <li>generi e mood</li>
+              <li>nuove uscite</li>
+              <li>scopri</li>
+            </ul>
+          </nav>
+
+
+
+          <div class="recently-played clearfix">
+            <h2>Ascoltate di recente</h2>
             <div class="recently-played-content fl">
               <img src="img/metal_lifting.jpg" alt="">
               <h4>Heavy Metal</h4>
@@ -92,13 +109,46 @@
           </div>
 
 
-      </div>
+          <div class="created-for clearfix">
+            <h2>Creato per Alessandro</h2>
+            <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+            <div class="created-for-content fl">
+              <img src="img/radar.jpeg" alt="">
+              <h4>Release Radar</h4>
+            </div>
 
-      <div class="footer">
+            <div class="created-for-content fl">
+              <img src="img/mixdaily.jpeg" alt="">
+              <h4>Daily Mix 1</h4>
+            </div>
 
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      </div>
+          </div>
+
+          <div class="most-popular-artist">
+            <h2>Artisti più popolari</h2>
+            <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+            <div class="most-popular-artist-content fl">
+              <img src="img/youg.jpeg" alt="">
+              <h4>Lana Del Rey</h4>
+            </div>
+
+            <div class="most-popular-artist-content fl">
+              <img src="img/einaudi.jpeg" alt="">
+              <h4>Ludovico Einaudi</h4>
+            </div>
+
+          </div>
+
+        </section>
+
+      </main>
+
+      <footer>
+
+      
+
+      </footer>
 
     </div>
 
