@@ -318,7 +318,6 @@ footer{
 
 .left-footer img{
   height: 55px;
-
   margin-left: 10px;
   vertical-align: middle;
 }
@@ -352,40 +351,42 @@ footer{
 .center-footer ul li {
   list-style: none;
   font-size: 16px;
-  padding: 10px;
+  padding: 20px 10px 6px 10px;
 }
 
 .center-footer ul li.scale {
   font-size: 32px;
-  padding: 10px 20px;
+  padding: 10px 20px 0 20px;
+
 }
 
 .center-footer ul li.scale:hover {
   transform: scale(1.2);
 }
 
-.time{
-  display: inline-block;
+.player-bar-time-container{
   font-size: 10px;
-  margin: 0 20px;
-  margin-bottom: 300px;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
-.center-footer span{
-  font-size: 10px;
-  color: #fff;
+.perc7{
+  width: 7%;
+  display: inline-block;
 }
 
 .player-bar-time {
-  background: #ccc;
-  width: 60%;
-  height: 4px;
+  background: #575757;
+  width: 50%;
+  height: 3px;
   margin: 0 auto;
+  display: inline-block;
+  margin-bottom: 2px;
 }
 
 .elapsed-time{
   position: relative;
-  background: green;
+  background: #b8b8b8;
   height: 100%;
 }
 
@@ -409,15 +410,32 @@ footer{
   width: 30%;
 }
 
+.right-footer .fa-list{
+  margin-left: 30px;
+}
+
 .fa-volume-up{
   margin-left: 40px;
 }
 
 .volume-bar{
-  background: #ccc;
+  background: #575757;
   width: 40%;
   height: 4px;
-  display: inline-block;
+}
+
+.volume-level{
+  position: relative;
+  background: #b8b8b8;
+  height: 100%;
+}
+
+.volume-bar:hover .pointer{
+  display: block
+}
+
+.perc20{
+  width: 20%;
 }
 
 @media (max-width: 991px){
@@ -448,6 +466,7 @@ footer{
  }
 
 @media (max-width: 575px) {
+
   .recently-played-content {
     width: calc(100% / 2 - 17px);
     margin-top: 15px;
