@@ -209,7 +209,7 @@ hr{
   width: 100%;
 }
 
-.content-img .fa-play-circle-o{
+.content-img .fa-play-circle-o, .content-img-radius .fa-play-circle-o{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -317,10 +317,17 @@ footer{
 }
 
 .left-footer img{
-  height: 40px;
+  height: 55px;
 
-  margin-left: 5px;
+  margin-left: 10px;
   vertical-align: middle;
+}
+
+.left-footer p{
+  padding-bottom: 0;
+  font-weight: bold;
+  color: #fff;
+  font-size: 13px;
 }
 
 .singer{
@@ -328,7 +335,7 @@ footer{
   vertical-align: middle;
   font-size: 10px;
   margin-left: 8px;
-  margin-right: 50px;
+  margin-right: 70px;
 }
 
 .center-footer{
@@ -366,10 +373,7 @@ footer{
 
 .center-footer span{
   font-size: 10px;
-  margin-bottom: 10px;
-  margin: 0 20px;
   color: #fff;
-  padding-bottom: 500px;
 }
 
 .player-bar-time {
@@ -377,7 +381,6 @@ footer{
   width: 60%;
   height: 4px;
   margin: 0 auto;
-  display: inline-block;
 }
 
 .elapsed-time{
