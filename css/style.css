@@ -48,6 +48,7 @@ main {
   padding-left: 15px;
   width: 230px;
   height: 100%;
+  padding-right: 15px;
 }
 
 .sidebar ul{
@@ -55,7 +56,7 @@ main {
 }
 
 .sidebar li{
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .sidebar img{
@@ -64,12 +65,21 @@ main {
 }
 
 .logo{
-  padding-bottom: 23px;
-  padding-top: 27px;
+  height: 100px;
+  line-height: 100px;
 }
 
 .logo img{
   height: 40px;
+}
+
+ul.pages-menu {
+  height: 100px;
+}
+
+.playlist{
+  height: calc(100% - 200px);
+  overflow-y: auto;
 }
 
 .playlist h4{
@@ -83,6 +93,34 @@ main {
 
 .playlist li{
   color: #7b7e82;
+}
+
+.top-sidebar {
+  height: calc(100% - 80px);
+  overflow: hidden;
+}
+
+.bottom-sidebar{
+  height: 80px;
+}
+
+.bottom-sidebar h5{
+  padding-top: 10px;
+}
+
+hr{
+  margin: 8px 0;
+}
+
+.profile-img{
+  height: 5px;
+  vertical-align: middle;
+}
+
+.profile-name{
+  vertical-align: middle;
+  padding-left: 20px;
+  color: #fff;
 }
 
 .header{
@@ -125,21 +163,36 @@ main {
 
 .music-content li{
   display: inline-block;
-  padding-right: 10px;
+  margin-right: 10px;
   text-transform: uppercase;
   font-size: 11px;
   padding-top: 15px;
   color: #7b7e82;
 }
 
+.border-b::after{
+  border-bottom: solid 3px #abfc2f;
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 50%; /* Change this to whatever width you want. */
+  padding-top: 3px; /* This creates some space between the element and the border. */
+}
+
 .recently-played{
   margin-left: 20px;
+  display: flex;
   flex-wrap: wrap;
 }
 
-.recently-played h2{
-  margin-bottom: 26px;
-  margin-top: 20px;
+.music-content h2{
+  margin-bottom: 15px;
+  margin-top: 35px;
+  margin-left: 20px;
+}
+
+.music-content p{
+  margin-left: 20px;
 }
 
 .recently-played-content{
@@ -156,7 +209,7 @@ main {
   width: 100%;
 }
 
-.fa-play-circle-o{
+.content-img .fa-play-circle-o{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -205,7 +258,7 @@ main {
 }
 
 .created-for{
-  margin-top: 40px;
+  margin-top: 15px;
   margin-left: 20px;
 }
 
@@ -219,25 +272,14 @@ main {
   width: 100%;
 }
 
-.created-for h2{
-
-}
-
-.created-for p{
-  padding: 10px 0 30px 0;
-}
-
 .created-for-content h4{
   padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .most-popular-artist{
-  margin-top: 35px;
+  margin-top: 15px;
   margin-left: 20px;
-}
-
-.most-popular-artist p{
-    padding: 10px 0 30px 0;
 }
 
 .most-popular-artist-content{
@@ -260,4 +302,159 @@ footer{
   height: 90px;
   color: #fff;
   background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-footer, .right-footer{
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.left-footer i, .right-footer i{
+  padding-right: 10px;
+}
+
+.left-footer img{
+  height: 40px;
+
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.singer{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 10px;
+  margin-left: 8px;
+  margin-right: 50px;
+}
+
+.center-footer{
+  width: 60%;
+  text-align: center;
+}
+
+.center-footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-footer ul li {
+  list-style: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.center-footer ul li.scale {
+  font-size: 32px;
+  padding: 10px 20px;
+}
+
+.center-footer ul li.scale:hover {
+  transform: scale(1.2);
+}
+
+.time{
+  display: inline-block;
+  font-size: 10px;
+  margin: 0 20px;
+  margin-bottom: 300px;
+}
+
+.center-footer span{
+  font-size: 10px;
+  margin-bottom: 10px;
+  margin: 0 20px;
+  color: #fff;
+  padding-bottom: 500px;
+}
+
+.player-bar-time {
+  background: #ccc;
+  width: 60%;
+  height: 4px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.elapsed-time{
+  position: relative;
+  background: green;
+  height: 100%;
+}
+
+.pointer{
+  display: none;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  right: 0;
+  top: 50%;
+}
+
+.player-bar-time:hover .pointer{
+  display: block
+}
+
+.perc-30{
+  width: 30%;
+}
+
+.fa-volume-up{
+  margin-left: 40px;
+}
+
+.volume-bar{
+  background: #ccc;
+  width: 40%;
+  height: 4px;
+  display: inline-block;
+}
+
+@media (max-width: 991px){
+  .recently-played-content{
+    width: calc(100% / 4 - 17px);
+    margin-top: 15px;
+  }
+  .created-for-content{
+    width: calc(100%/ 4 - 17px);
+  }
+  .most-popular-artist-content{
+    width: calc(100%/ 4 - 17px);
+  }
+
+ }
+
+ @media (max-width: 767px) {
+   .recently-played-content {
+     width: calc(100% / 2 - 17px);
+     margin-top: 15px;
+   }
+   .created-for-content{
+     width: calc(100%/ 2 - 17px);
+   }
+   .most-popular-artist-content{
+     width: calc(100%/ 2 - 17px);
+   }
+ }
+
+@media (max-width: 575px) {
+  .recently-played-content {
+    width: calc(100% / 2 - 17px);
+    margin-top: 15px;
+  }
+  .created-for-content{
+    width: calc(100%/ 2 - 17px);
+
+  }
+  .most-popular-artist-content{
+    width: calc(100%/ 2 - 17px);
+  }
+
 }
