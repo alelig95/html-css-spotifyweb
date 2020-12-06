@@ -73,6 +73,10 @@ main {
   height: 40px;
 }
 
+.logo-small{
+  display: none;
+}
+
 ul.pages-menu {
   height: 100px;
 }
@@ -104,8 +108,14 @@ ul.pages-menu {
   height: 80px;
 }
 
-.bottom-sidebar h5{
-  padding-top: 10px;
+.download-icon{
+  width: 17px;
+  vertical-align: middle;
+}
+
+.bottom-sidebar span{
+  margin-left: 5px;
+  vertical-align: middle;
 }
 
 hr{
@@ -119,7 +129,7 @@ hr{
 
 .profile-name{
   vertical-align: middle;
-  padding-left: 20px;
+  padding-left: 13px;
   color: #fff;
 }
 
@@ -129,6 +139,7 @@ hr{
   color: #fff;
   background-color: rgba(0,0,0,.4);
   position: fixed;
+  z-index: 2;
   text-align: right;
   padding-right: 50px;
   line-height: 90px;
@@ -313,7 +324,7 @@ footer{
 }
 
 .left-footer i, .right-footer i{
-  padding-right: 10px;
+  padding-right: 16px;
 }
 
 .left-footer img{
@@ -329,12 +340,12 @@ footer{
   font-size: 13px;
 }
 
-.singer{
+.singer-and-song{
   display: inline-block;
   vertical-align: middle;
   font-size: 10px;
-  margin-left: 8px;
-  margin-right: 70px;
+  margin-left: 11px;
+  margin-right: 60px;
 }
 
 .center-footer{
@@ -370,14 +381,14 @@ footer{
   width: 100%;
 }
 
-.perc7{
+.minutes{
   width: 7%;
   display: inline-block;
 }
 
 .player-bar-time {
   background: #575757;
-  width: 50%;
+  width: 70%;
   height: 3px;
   margin: 0 auto;
   display: inline-block;
@@ -411,11 +422,7 @@ footer{
 }
 
 .right-footer .fa-list{
-  margin-left: 30px;
-}
-
-.fa-volume-up{
-  margin-left: 40px;
+  margin-left: 70px;
 }
 
 .volume-bar{
@@ -466,6 +473,36 @@ footer{
  }
 
 @media (max-width: 575px) {
+
+  .sidebar{
+    width: 50px;
+  }
+
+  .sidebar span, .logo, hr{
+    display: none;
+  }
+
+  .logo-small{
+    display: block;
+    height: 100px;
+    line-height: 100px;
+  }
+
+  .playlist{
+    display: none;
+  }
+
+  .download-icon{
+    margin-top: 20px;
+  }
+
+  .music-content, .header{
+    width: calc(100% - 50px);
+  }
+
+  .button-type-a{
+    margin-right: 60px;
+  }
 
   .recently-played-content {
     width: calc(100% / 2 - 17px);
